@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <h1>Temperature Converter!</h1>
+
+    <!-- Description -->
+    <p>This program allows you to input a temperature in Celsius. It then effortlessly converts this Celsius temperature into Fahrenheit and presents the result in an informative sentence format. For instance, if you enter a temperature of X degrees Celsius, the program will display "X degrees Celsius is equivalent to Y degrees Fahrenheit." Here, X represents your initial Celsius input, while Y represents the converted Fahrenheit temperature, rounded to two decimal places.</p>
+    
+    <!-- Input field for Celsius temperature -->
+    <label for="celsius">Enter temperature in Celsius:</label>
+    <input type="number" id="celsius" placeholder="Enter Celsius temperature">
+
+    <!-- Button to trigger the conversion -->
+    <button onclick="convertTemperature()">Convert</button>
+
+    <!-- Display the result here -->
+    <p id="result"></p>
+
+<script>
+    // Function to convert Celsius to Fahrenheit and display the result
+    function convertTemperature() {
+      // Get the Celsius value from the input field and parse it as a float
+      const celsius = parseFloat(document.getElementById('celsius').value);
+      
+      // Check if the input is a valid number
+      if (isNaN(celsius)) {
+        alert('Please enter a valid number for Celsius temperature.');
+        return;
+      }
+      
+      // Calculate Fahrenheit using the conversion formula
+      const fahrenheit = (celsius * 9/5) + 32;
+      
+      // Display the result on the page
+      document.getElementById('result').textContent = `${celsius}°C is ${fahrenheit.toFixed(2)}°F`;
+    }
+
+</script>
+
+</body>
+</html>
