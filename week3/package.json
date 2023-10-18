@@ -1,0 +1,19 @@
+{
+  "name": "week3",
+  "version": "1.0.0",
+  "main": "node2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Priscila Garcia-Mendoza",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgm369/adv-javascript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pgm369/adv-javascript/issues"
+  },
+  "homepage": "https://github.com/pgm369/adv-javascript#readme",
+  "description": ""
+}
